@@ -1,0 +1,600 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A2CA84DE217E14D500242A6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CA84DD217E14D500242A6C /* AppDelegate.swift */; };
+		A2CA84E0217E14D500242A6C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CA84DF217E14D500242A6C /* ViewController.swift */; };
+		A2CA84E3217E14D500242A6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2CA84E1217E14D500242A6C /* Main.storyboard */; };
+		A2CA84E6217E14D500242A6C /* merlinApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A2CA84E4217E14D500242A6C /* merlinApp.xcdatamodeld */; };
+		A2CA84E8217E14D700242A6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2CA84E7217E14D700242A6C /* Assets.xcassets */; };
+		A2CA84EB217E14D700242A6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2CA84E9217E14D700242A6C /* LaunchScreen.storyboard */; };
+		A2CA84F6217E14D700242A6C /* merlinAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CA84F5217E14D700242A6C /* merlinAppTests.swift */; };
+		A2CA8501217E14D700242A6C /* merlinAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CA8500217E14D700242A6C /* merlinAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A2CA84F2217E14D700242A6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2CA84D2217E14D500242A6C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A2CA84D9217E14D500242A6C;
+			remoteInfo = merlinApp;
+		};
+		A2CA84FD217E14D700242A6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2CA84D2217E14D500242A6C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A2CA84D9217E14D500242A6C;
+			remoteInfo = merlinApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A2CA84DA217E14D500242A6C /* merlinApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = merlinApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2CA84DD217E14D500242A6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A2CA84DF217E14D500242A6C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A2CA84E2217E14D500242A6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A2CA84E5217E14D500242A6C /* merlinApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = merlinApp.xcdatamodel; sourceTree = "<group>"; };
+		A2CA84E7217E14D700242A6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A2CA84EA217E14D700242A6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A2CA84EC217E14D700242A6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2CA84F1217E14D700242A6C /* merlinAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = merlinAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2CA84F5217E14D700242A6C /* merlinAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = merlinAppTests.swift; sourceTree = "<group>"; };
+		A2CA84F7217E14D700242A6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2CA84FC217E14D700242A6C /* merlinAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = merlinAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2CA8500217E14D700242A6C /* merlinAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = merlinAppUITests.swift; sourceTree = "<group>"; };
+		A2CA8502217E14D700242A6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A2CA84D7217E14D500242A6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2CA84EE217E14D700242A6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2CA84F9217E14D700242A6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A2CA84D1217E14D500242A6C = {
+			isa = PBXGroup;
+			children = (
+				A2CA84DC217E14D500242A6C /* merlinApp */,
+				A2CA84F4217E14D700242A6C /* merlinAppTests */,
+				A2CA84FF217E14D700242A6C /* merlinAppUITests */,
+				A2CA84DB217E14D500242A6C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A2CA84DB217E14D500242A6C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A2CA84DA217E14D500242A6C /* merlinApp.app */,
+				A2CA84F1217E14D700242A6C /* merlinAppTests.xctest */,
+				A2CA84FC217E14D700242A6C /* merlinAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A2CA84DC217E14D500242A6C /* merlinApp */ = {
+			isa = PBXGroup;
+			children = (
+				A2CA84DD217E14D500242A6C /* AppDelegate.swift */,
+				A2CA84DF217E14D500242A6C /* ViewController.swift */,
+				A2CA84E1217E14D500242A6C /* Main.storyboard */,
+				A2CA84E7217E14D700242A6C /* Assets.xcassets */,
+				A2CA84E9217E14D700242A6C /* LaunchScreen.storyboard */,
+				A2CA84EC217E14D700242A6C /* Info.plist */,
+				A2CA84E4217E14D500242A6C /* merlinApp.xcdatamodeld */,
+			);
+			path = merlinApp;
+			sourceTree = "<group>";
+		};
+		A2CA84F4217E14D700242A6C /* merlinAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				A2CA84F5217E14D700242A6C /* merlinAppTests.swift */,
+				A2CA84F7217E14D700242A6C /* Info.plist */,
+			);
+			path = merlinAppTests;
+			sourceTree = "<group>";
+		};
+		A2CA84FF217E14D700242A6C /* merlinAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A2CA8500217E14D700242A6C /* merlinAppUITests.swift */,
+				A2CA8502217E14D700242A6C /* Info.plist */,
+			);
+			path = merlinAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A2CA84D9217E14D500242A6C /* merlinApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2CA8505217E14D700242A6C /* Build configuration list for PBXNativeTarget "merlinApp" */;
+			buildPhases = (
+				A2CA84D6217E14D500242A6C /* Sources */,
+				A2CA84D7217E14D500242A6C /* Frameworks */,
+				A2CA84D8217E14D500242A6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = merlinApp;
+			productName = merlinApp;
+			productReference = A2CA84DA217E14D500242A6C /* merlinApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A2CA84F0217E14D700242A6C /* merlinAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2CA8508217E14D700242A6C /* Build configuration list for PBXNativeTarget "merlinAppTests" */;
+			buildPhases = (
+				A2CA84ED217E14D700242A6C /* Sources */,
+				A2CA84EE217E14D700242A6C /* Frameworks */,
+				A2CA84EF217E14D700242A6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A2CA84F3217E14D700242A6C /* PBXTargetDependency */,
+			);
+			name = merlinAppTests;
+			productName = merlinAppTests;
+			productReference = A2CA84F1217E14D700242A6C /* merlinAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A2CA84FB217E14D700242A6C /* merlinAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2CA850B217E14D700242A6C /* Build configuration list for PBXNativeTarget "merlinAppUITests" */;
+			buildPhases = (
+				A2CA84F8217E14D700242A6C /* Sources */,
+				A2CA84F9217E14D700242A6C /* Frameworks */,
+				A2CA84FA217E14D700242A6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A2CA84FE217E14D700242A6C /* PBXTargetDependency */,
+			);
+			name = merlinAppUITests;
+			productName = merlinAppUITests;
+			productReference = A2CA84FC217E14D700242A6C /* merlinAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A2CA84D2217E14D500242A6C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Devp.ios;
+				TargetAttributes = {
+					A2CA84D9217E14D500242A6C = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					A2CA84F0217E14D700242A6C = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = A2CA84D9217E14D500242A6C;
+					};
+					A2CA84FB217E14D700242A6C = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = A2CA84D9217E14D500242A6C;
+					};
+				};
+			};
+			buildConfigurationList = A2CA84D5217E14D500242A6C /* Build configuration list for PBXProject "merlinApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A2CA84D1217E14D500242A6C;
+			productRefGroup = A2CA84DB217E14D500242A6C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A2CA84D9217E14D500242A6C /* merlinApp */,
+				A2CA84F0217E14D700242A6C /* merlinAppTests */,
+				A2CA84FB217E14D700242A6C /* merlinAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A2CA84D8217E14D500242A6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2CA84EB217E14D700242A6C /* LaunchScreen.storyboard in Resources */,
+				A2CA84E8217E14D700242A6C /* Assets.xcassets in Resources */,
+				A2CA84E3217E14D500242A6C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2CA84EF217E14D700242A6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2CA84FA217E14D700242A6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A2CA84D6217E14D500242A6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2CA84E6217E14D500242A6C /* merlinApp.xcdatamodeld in Sources */,
+				A2CA84E0217E14D500242A6C /* ViewController.swift in Sources */,
+				A2CA84DE217E14D500242A6C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2CA84ED217E14D700242A6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2CA84F6217E14D700242A6C /* merlinAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2CA84F8217E14D700242A6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2CA8501217E14D700242A6C /* merlinAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A2CA84F3217E14D700242A6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A2CA84D9217E14D500242A6C /* merlinApp */;
+			targetProxy = A2CA84F2217E14D700242A6C /* PBXContainerItemProxy */;
+		};
+		A2CA84FE217E14D700242A6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A2CA84D9217E14D500242A6C /* merlinApp */;
+			targetProxy = A2CA84FD217E14D700242A6C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A2CA84E1217E14D500242A6C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2CA84E2217E14D500242A6C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A2CA84E9217E14D700242A6C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2CA84EA217E14D700242A6C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A2CA8503217E14D700242A6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A2CA8504217E14D700242A6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A2CA8506217E14D700242A6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = merlinApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = diego.merlinApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A2CA8507217E14D700242A6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = merlinApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = diego.merlinApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A2CA8509217E14D700242A6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = merlinAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = diego.merlinAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/merlinApp.app/merlinApp";
+			};
+			name = Debug;
+		};
+		A2CA850A217E14D700242A6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = merlinAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = diego.merlinAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/merlinApp.app/merlinApp";
+			};
+			name = Release;
+		};
+		A2CA850C217E14D700242A6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = merlinAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = diego.merlinAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = merlinApp;
+			};
+			name = Debug;
+		};
+		A2CA850D217E14D700242A6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = merlinAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = diego.merlinAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = merlinApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A2CA84D5217E14D500242A6C /* Build configuration list for PBXProject "merlinApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2CA8503217E14D700242A6C /* Debug */,
+				A2CA8504217E14D700242A6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2CA8505217E14D700242A6C /* Build configuration list for PBXNativeTarget "merlinApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2CA8506217E14D700242A6C /* Debug */,
+				A2CA8507217E14D700242A6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2CA8508217E14D700242A6C /* Build configuration list for PBXNativeTarget "merlinAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2CA8509217E14D700242A6C /* Debug */,
+				A2CA850A217E14D700242A6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2CA850B217E14D700242A6C /* Build configuration list for PBXNativeTarget "merlinAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2CA850C217E14D700242A6C /* Debug */,
+				A2CA850D217E14D700242A6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A2CA84E4217E14D500242A6C /* merlinApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A2CA84E5217E14D500242A6C /* merlinApp.xcdatamodel */,
+			);
+			currentVersion = A2CA84E5217E14D500242A6C /* merlinApp.xcdatamodel */;
+			path = merlinApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A2CA84D2217E14D500242A6C /* Project object */;
+}
