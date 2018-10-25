@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3l7-pm-Egd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Hfm-3U-3B7">
+                                <rect key="frame" x="67" y="170" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="Mod-Xw-vTM"/>
+                                    <constraint firstAttribute="width" secondItem="Hfm-3U-3B7" secondAttribute="height" multiplier="1:1" id="Ry2-sJ-aR8"/>
+                                    <constraint firstAttribute="width" constant="240" id="uDH-iX-QHK"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LocationApp" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uOB-dZ-arZ">
+                                <rect key="frame" x="16" y="430" width="343" height="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="40"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.65098039215686276" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uOB-dZ-arZ" firstAttribute="top" secondItem="Hfm-3U-3B7" secondAttribute="bottom" constant="20" id="4lS-Lw-muj"/>
+                            <constraint firstItem="Hfm-3U-3B7" firstAttribute="leading" secondItem="9Jr-H9-4C7" secondAttribute="leading" constant="67.019999999999996" id="Fpg-Ce-kNw"/>
+                            <constraint firstItem="Hfm-3U-3B7" firstAttribute="top" secondItem="9Jr-H9-4C7" secondAttribute="top" constant="150" id="LsS-Uf-Mtg"/>
+                            <constraint firstItem="uOB-dZ-arZ" firstAttribute="leading" secondItem="9Jr-H9-4C7" secondAttribute="leading" constant="16" id="btN-wp-TRN"/>
+                            <constraint firstItem="9Jr-H9-4C7" firstAttribute="trailing" secondItem="Hfm-3U-3B7" secondAttribute="trailing" constant="67.980000000000004" id="kt1-i2-kWv"/>
+                            <constraint firstItem="9Jr-H9-4C7" firstAttribute="trailing" secondItem="uOB-dZ-arZ" secondAttribute="trailing" constant="16" id="nOC-tC-dPf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9Jr-H9-4C7"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="placeIcon" width="256" height="256"/>
+    </resources>
+</document>

@@ -1,0 +1,6 @@
+framework module Pods_merlinApp {
+  umbrella header "Pods-merlinApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

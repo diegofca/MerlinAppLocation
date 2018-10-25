@@ -1,0 +1,15 @@
+/* 
+  StringRes.strings
+  merlinApp
+
+  Created by Devp.ios on 25/10/18.
+  Copyright © 2018 Devp.ios. All rights reserved.
+*/
+
+"bottomplacesheet.searchbar.placeholder"="Buscar lugares o temas";
+"homeMapView.conection.failed"="Error en la conexión.";
+"homeMapView.conection.getlocated"="Ubicando la posición: ";
+"homeMapView.placeslist.empty"="No se encontraron resutados de ";
+"bottomplacesheetCell.meters.label"=" Metros";
+
+

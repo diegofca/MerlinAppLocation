@@ -1,0 +1,21 @@
+
+/* Class = "UIViewController"; title = "Home"; ObjectID = "BYZ-38-t0r"; */
+"BYZ-38-t0r.title" = "Home";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "Q0M-30-ioa"; */
+"Q0M-30-ioa.title" = "Item";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "R0l-l0-fU8"; */
+"R0l-l0-fU8.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "awY-sL-Zfb"; */
+"awY-sL-Zfb.text" = "Label";
+
+/* Class = "UINavigationItem"; title = "Home"; ObjectID = "pGE-q2-9px"; */
+"pGE-q2-9px.title" = "Home";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "rf6-GV-hN3"; */
+"rf6-GV-hN3.text" = "Label";
+
+/* Class = "UINavigationController"; title = "App"; ObjectID = "udU-Bh-Uhh"; */
+"udU-Bh-Uhh.title" = "App";
