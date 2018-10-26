@@ -106,9 +106,18 @@ class BottomPlaceSheetViewController: UIViewController, HomeMapVMDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        let window = UIApplication.shared.keyWindow
+        var topPadding: CGFloat!
+        var bottomPadding: CGFloat!
+
+        if #available(iOS 11.0, *) {
+            topPadding = window?.safeAreaInsets.top
+            bottomPadding = window?.safeAreaInsets.bottom
+        }
+        
         self.initalFrame = UIScreen.main.bounds
         self.middleY = initalFrame.height * 0.6
-        self.bottomY = initalFrame.height - bottomOffset
+        self.bottomY = initalFrame.height - bottomOffset - bottomPadding
         self.lastY = self.middleY
         
         bottomSheetDelegate?.updateBottomSheet(frame: self.initalFrame.offsetBy(dx: 0, dy: self.bottomY))

@@ -23,7 +23,11 @@ class Services {
         Alamofire.request(url).responseObject {(response: DataResponse<PlaceList>) in
             if response.result.isSuccess {
                 let lPlaces = response.result.value!
-                success((lPlaces.groupsPlaces?[0].places)!)
+                if lPlaces.groupsPlaces?.count == nil {
+                    success( [Place]() )
+                }else{
+                    success((lPlaces.groupsPlaces?[0].places)!)
+                }
             }
             if response.result.isFailure {
                 let error : Error = response.result.error!
