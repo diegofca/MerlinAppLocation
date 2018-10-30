@@ -43,6 +43,7 @@ class BottomPlaceSheetViewController: UIViewController, HomeMapVMDelegate {
     let bottomOffset: CGFloat = 70 //64
     var lastLevel: SheetLevel = .bottom
     var disableTableScroll = false
+    var didTapDeleteKey = false
     
     var listItems: [Place] = []
     var headerItems: [Any] = []
@@ -107,17 +108,14 @@ class BottomPlaceSheetViewController: UIViewController, HomeMapVMDelegate {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         let window = UIApplication.shared.keyWindow
-        var topPadding: CGFloat!
-        var bottomPadding: CGFloat!
-
-        if #available(iOS 11.0, *) {
-            topPadding = window?.safeAreaInsets.top
-            bottomPadding = window?.safeAreaInsets.bottom
+        
+        if #available(iOS 12.0, *) {
+           self.viewModel.bottomPadding = (window?.safeAreaInsets.bottom)!
         }
         
         self.initalFrame = UIScreen.main.bounds
         self.middleY = initalFrame.height * 0.6
-        self.bottomY = initalFrame.height - bottomOffset - bottomPadding
+        self.bottomY = initalFrame.height - bottomOffset - self.viewModel.bottomPadding
         self.lastY = self.middleY
         
         bottomSheetDelegate?.updateBottomSheet(frame: self.initalFrame.offsetBy(dx: 0, dy: self.bottomY))
@@ -219,8 +217,9 @@ class BottomPlaceSheetViewController: UIViewController, HomeMapVMDelegate {
         }
     }
 }
+
 extension BottomPlaceSheetViewController: UISearchBarDelegate{
-    
+
     //Buttons cancel
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar){
         if (searchBar == self.searchBar) {
@@ -249,6 +248,19 @@ extension BottomPlaceSheetViewController: UISearchBarDelegate{
         }
         return true
     }
+    
+    func searchBar(_ searchBar: UISearchBar, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool{
+        didTapDeleteKey = text.isEmpty
+        return true
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if !didTapDeleteKey && searchText.isEmpty {
+            setSheetState( .middle)
+        }
+        didTapDeleteKey = false
+    }
+    
 }
 
 extension BottomPlaceSheetViewController: UITableViewDelegate, UITableViewDataSource{

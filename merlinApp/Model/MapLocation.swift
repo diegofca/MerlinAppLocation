@@ -20,6 +20,14 @@ class MapLocation  {
     init( lat : Double, lon: Double) {
         locationHostpot = CLLocation(latitude: CLLocationDegrees(lat), longitude: CLLocationDegrees(lon))
     }
+    
+    func getLocation() -> CLLocation{
+        let myLocation = CLLocation(
+            latitude:   getLatitude(),
+            longitude:  getLongitude()
+        )
+        return myLocation
+    }
 
     func getLongitude()-> CLLocationDegrees {
         return locationHostpot.coordinate.longitude

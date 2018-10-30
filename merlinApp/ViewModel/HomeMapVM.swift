@@ -15,15 +15,16 @@ import SwiftyJSON
 class HomeMapVM {
     
     //Config Map variables ---
-    var currentLocation = MapLocation()
+    var mylocation = MapLocation()
     var zoom : Float = 18
     var gpsBtnBottom: CGFloat = 70
+    var posy: CGFloat!
     var updateLocation:Bool = true
     
     var places: [Place]!
     
     func getRecommPlaces(_ searchText: String, success:@escaping ([Place]) -> Void, failure:@escaping (Error) -> Void) {
-        Services.getExplorerPlaces(location: currentLocation, qSearch: searchText ,success: { (resultPlaces) in
+        Services.getExplorerPlaces(location: mylocation, qSearch: searchText ,success: { (resultPlaces) in
             success(resultPlaces)
         }, failure: { (error) in
             failure(error)
@@ -57,10 +58,23 @@ class HomeMapVM {
         AlertBar.show(type: .error, message: text, options: options)
     }
     
+    func sortingPlace(_ sortToListPlace: [Place]) -> [Place] {
+        var pointLocation: CLLocation!
+        for pl in sortToListPlace {
+            pointLocation = CLLocation(
+                latitude:  CLLocationDegrees(pl.location.lat),
+                longitude: CLLocationDegrees(pl.location.long)
+            )
+            pl.location.distance = self.getDistance( self.mylocation.getLocation(), pointLocation )
+        }
+        return sortToListPlace.sorted( by: { (first: Place, second: Place) -> Bool in
+            first.location.distance < second.location.distance })
+    }
+    
     // No termine de implementarlo por que no tengo cuenta de pago en GoogleMaps y excedi las peticiones
-    func getWayLocation(from source: CLLocationCoordinate2D, to destination: CLLocationCoordinate2D, success:@escaping (GMSPolyline) -> Void){
+    func getWayLocation(from source: CLLocation, to destination: CLLocation, success:@escaping (GMSPolyline) -> Void){
         
-        let url = URL(string: "https://maps.googleapis.com/maps/api/directions/json?origin=\(source.latitude),\(source.longitude)&destination=\(destination.latitude),\(destination.longitude)&sensor=false&mode=driving&key=\(Constants.APIGOOGLE)")!
+        let url = URL(string: "https://maps.googleapis.com/maps/api/directions/json?origin=\(source.coordinate.latitude),\(source.coordinate.longitude)&destination=\(destination.coordinate.latitude),\(destination.coordinate.longitude)&sensor=false&mode=driving&key=\(Constants.APIGOOGLE)")!
         
         Alamofire.request(url).responseJSON {(responseData) -> Void in
             
@@ -82,11 +96,28 @@ class HomeMapVM {
         }
     }
     
+    func getDistance(_ posInit: CLLocation,_ posDestinatio: CLLocation) -> Int {
+        let distanceInMeters = posInit.distance(from: posDestinatio)
+        return Int(distanceInMeters)
+    }
+    
     private func showPath(polyStr :String) -> GMSPolyline{
         let path = GMSPath(fromEncodedPath: polyStr)
         let polyline = GMSPolyline(path: path)
         polyline.strokeWidth = 3.0
         return polyline
+    }
+    
+    func outSizeCardInfoPlace(_ view :UIView){
+        UIView.animate(withDuration: 0.5, animations: {
+            view.frame.origin.y = self.posy + 8
+        }, completion: nil)
+    }
+    
+    func inSizeCardInfoPlace(_ posY: CGFloat, _ view :UIView){
+        UIView.animate(withDuration: 0.5, animations: {
+            view.frame.origin.y = UIScreen.main.bounds.height - view.frame.size.height - posY - 8
+        }, completion: nil)
     }
     
 }

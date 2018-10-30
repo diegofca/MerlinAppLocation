@@ -12,16 +12,18 @@ import UIKit
 extension UIView{
     // Funcion utilizada para aplicar view shadow a view
     func viewShadow(){
+        
+        self.layer.position = self.center
         self.layer.cornerRadius = 8.0
         self.layer.shadowColor = UIColor.darkGray.cgColor
-        self.layer.shadowOpacity = 0.8
-        self.layer.shadowRadius = 3.0
-        self.layer.shadowOffset = CGSize(width: 2.0, height: 2.0)
+        self.layer.shadowOpacity = 0.5
+        self.layer.shadowRadius = 2.0
+        self.layer.shadowOffset = CGSize.zero
     }
 }
 
 extension UIViewController {
-    class func displaySpinner(onView : UIView) -> UIView {
+    func displaySpinner(onView : UIView) -> UIView {
         let spinnerView = UIView.init(frame: onView.bounds)
         spinnerView.backgroundColor = UIColor.init(red: 0.5, green: 0.5, blue: 0.5, alpha: 0.5)
         let ai = UIActivityIndicatorView.init(activityIndicatorStyle: .whiteLarge)
@@ -35,7 +37,7 @@ extension UIViewController {
         return spinnerView
     }
     
-    class func removeSpinner(spinner :UIView) {
+    func removeSpinner(spinner :UIView) {
         DispatchQueue.main.async {
             spinner.removeFromSuperview()
         }

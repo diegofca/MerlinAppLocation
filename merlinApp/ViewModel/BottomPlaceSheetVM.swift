@@ -27,6 +27,8 @@ class BottomPlaceSheetVM: HomeViewModelType {
     var delegate: HomeMapVMDelegate?
     
     let tagAddersViews :Int = 101
+    var bottomPadding: CGFloat = 0
+
     // Genera animacion a la vista seleccionada
     func loadLottieAnim(_ viewcenter: UIView, success:@escaping (LOTAnimationView) -> Void) {
         let animationView = LOTAnimationView(name: Constants.LOCATIONS_SIGNAL)
@@ -95,18 +97,5 @@ class BottomPlaceSheetVM: HomeViewModelType {
         }
     }
     
-    
-    // --- crear ruta de marcadores
-    func getPolylineRoute(listMarkets: [Place]) -> GMSPolyline {
-        let path = GMSMutablePath()
-        for place in listMarkets {
-            path.add(CLLocationCoordinate2D(
-                latitude: place.location.lat,
-                longitude: place.location.long
-            ))
-        }
-        let rectangle = GMSPolyline(path: path)
-        return rectangle
-    }
     
 }
